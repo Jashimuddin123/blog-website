@@ -26,6 +26,32 @@ body{
 .text-justify{
     text-align: justify;
 }
+.section-heading{
+    color: #fafafa;
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #4c4c4c;
+}
+.btn{
+    background-color: rgb(230, 159, .8);
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
 /* reset styles code ends here */
 /* header start here */
 header{
@@ -108,6 +134,48 @@ margin-right: 0;
 }
 /* banner setion styles ends here */
 
+/* blog about styles start here */
+#blog-about{
+   
+    min-height: 95vh;
+    padding: 5rem 1rem;
+   
+}
+.card-container{
+    display: flex;
+    align-items: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: #a09d9d;
+    margin: 2rem;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-header{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.card-description{
+    padding: 0.4rem;
+    text-align: justify;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+}
+.card-btn{
+    align-self: center;
+    width: 80%;
+}
+
+
+/* blog about styles ends here */
 
 /* responsive starts here */
 @media (max-width:992px){
@@ -122,6 +190,13 @@ margin-right: 0;
     
     }
 
+    .card-container{
+        width: 50%;
+       
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
 }
 @media (max-width:768px){
     html{
@@ -130,6 +205,13 @@ margin-right: 0;
 
     #blog-banner-section article{
        width: 80%;
+    }
+
+    .card-container{
+        width: 80%;
+       
+       
+       
     }
 
 }
@@ -152,9 +234,27 @@ nav li{
 #blog-banner-section article{
     width: 90%;
 }
+.banner-img{
+    max-width: 100%;
+}
+#blog-about{
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    width: 90%;
+   
+   
+}
 }
 @media (max-width:400px){
-    
+    header{
+       
+        background-color: red;
+    }
 
 }
 /* responsive ends here */
