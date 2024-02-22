@@ -23,6 +23,9 @@ body{
     margin: auto;
     
 }
+.text-justify{
+    text-align: justify;
+}
 /* reset styles code ends here */
 /* header start here */
 header{
@@ -69,14 +72,65 @@ margin-right: 0;
 }
 /* header ends here */
 
+/* banner setion styles start here */
+#blog-banner-section{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+
+}
+#blog-banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin: 1.4rem;
+    color: #fafafa;
+}
+.banner-description{
+    font-size: 1.8rem;
+   
+}
+
+.banner-img{
+   width: 50rem;
+   height: 50rem;
+   border: 0.3rem solid;
+}
+/* banner setion styles ends here */
+
 
 /* responsive starts here */
 @media (max-width:992px){
+    #blog-banner-section{
+        flex-direction: column;
+    }
+    #blog-banner-section article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
+    }
 
 }
 @media (max-width:768px){
-    
+    html{
+        width: 55.5%;
+    }
+
+    #blog-banner-section article{
+       width: 80%;
+    }
 
 }
 @media (max-width:600px){
@@ -91,8 +145,13 @@ nav li{
     display: block;
     margin-right: 0;
     margin: 1rem 0;
+}
+#blog-banner-section{
+    min-height: auto;
 }  
-
+#blog-banner-section article{
+    width: 90%;
+}
 }
 @media (max-width:400px){
     
