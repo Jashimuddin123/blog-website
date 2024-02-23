@@ -180,7 +180,7 @@ margin-right: 0;
 /* archivs styles start here */
 #archives{
     padding: 5rem 1rem;
-    min-height: 95vh;
+    min-height: auto;
 }
 .archives-heading{
     font-size: 6rem;
@@ -212,6 +212,65 @@ margin: 2rem;
     transform: scale(1.1)
 }
 /* archivs styles ends here */
+
+/* blog post section styles start hear */
+#blog-post{
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+.blog-title{
+    font-size: 6rem;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+.blog-post{
+    width: 80%;
+    display: flex;
+   
+   margin: 5rem auto;
+   
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222,-0.1rem 0 0.1rem #222;
+    transition: transform 0.4s;
+    
+}
+.blog-post:hover{
+    width: 80%;
+    transform: scale(1.1);
+}
+.blog-post aside{
+    flex: 1;
+}
+.blog-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+.blog-heading{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+   
+}
+.blog-sub-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.blog-description{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+.blog-btn{
+    width: 30%;
+}
+.blog-img{
+    width: 100%;
+    height: 100%;
+}
+/* blog post section styles ends hear */
 
 /* responsive starts here */
 @media (max-width:992px){
@@ -252,7 +311,11 @@ margin: 2rem;
     #archives{
         min-height: auto;
     }
-
+.blog-post{
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 80%;
+}
 }
 @media (max-width:600px){
   header{
@@ -290,6 +353,10 @@ nav li{
 }
 .archives-container-lists{
     flex-wrap: wrap;
+}
+.blog-post{
+
+    width: 90%;
 }
 }
 @media (max-width:400px){
