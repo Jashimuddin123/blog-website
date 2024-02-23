@@ -66,6 +66,10 @@ header{
     z-index: 10;
     line-height: 5vh;
 }
+#blog-header{
+    min-height: 5vh;
+    
+}
 .blog-header{
     border: 1px solid white;
 
@@ -272,6 +276,56 @@ margin: 2rem;
 }
 /* blog post section styles ends hear */
 
+/* contact section styles start here */
+#contact-section{
+    background-color: #4c4c4c;
+}
+.contact-heading{
+ font-size: 6rem;
+ color: #fafafa;
+ text-align: center;
+}
+#contact-form{
+padding: 1rem;
+box-shadow: 0.1rem 0.1rem 0.1rem #222,-0.1rem 0 0.1rem #222;
+margin: 1rem;
+color: #fafafa;
+display: flex;
+flex-direction: column;
+}
+.form-contact{
+    margin-bottom: 1.5rem;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-contact label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+input, textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+contact-btn{
+width: 30%;
+}
+.form-button-field{
+display: flex;
+justify-content: flex-end;
+}
+/* contact section styles ends here */
+
 /* responsive starts here */
 @media (max-width:992px){
     #blog-banner-section{
@@ -297,6 +351,10 @@ margin: 2rem;
     html{
         width: 55.5%;
     }
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
 
     #blog-banner-section article{
        width: 80%;
@@ -316,12 +374,18 @@ margin: 2rem;
     margin-bottom: 3rem;
     width: 80%;
 }
+#contact-section{
+    min-height: auto;
+}
 }
 @media (max-width:600px){
   header{
     flex-direction: column;
    
   }  
+  #blog-header{
+    min-height: 5vh;
+  }
   nav ul{
     padding-left: 2.5rem;
 }
@@ -358,11 +422,28 @@ nav li{
 
     width: 90%;
 }
+#contact-form{
+    width: 90%;
+}
+.form-contact{
+    flex-direction: column;
+
+}
+.form-contact label{
+    margin-bottom: 0.5rem;
+}
+input, textarea{
+    width: 100%;
+}
 }
 @media (max-width:400px){
+    #blog-header{
+        min-height: 5vh;
+        width: 100%;
+      }
     header{
+       flex-direction: column;
        
-        background-color: red;
     }
 
 }
